@@ -568,12 +568,15 @@ header {
 }
 .timeline .items .item {
   display: flex;
+  align-items: center;
+  gap: 5%;
   margin-bottom: 12%;
 }
 .timeline .items .item .icon-wrapper {
-  width: 40%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
 }
 .timeline .items .item .icon-wrapper .icon {
   display: flex;
@@ -588,17 +591,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20%;
 }
 .timeline .items .item .event {
-  width: 60%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
   text-align: left;
-}
-.timeline .items .item .event .event-title {
-  margin-bottom: 5%;
+  white-space: nowrap;
 }
 @media (max-width: 500px) {
   .timeline .content {

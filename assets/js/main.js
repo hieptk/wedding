@@ -778,7 +778,7 @@
     document.querySelectorAll('.timeline-item').forEach(animateTimelineItem);
     initFAQ();
     initRSVP();
-    startCountdown(new Date("2026-08-12T17:00:00"));
+    startCountdown(new Date("2026-09-20T17:00:00"));
   }
 
   document.addEventListener("DOMContentLoaded", init);
