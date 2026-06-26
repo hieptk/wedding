@@ -162,7 +162,7 @@
     const content = section.querySelector(".content");
     const letter = section.querySelector(".letter-img");
     const husband = section.querySelector(".husband");
-    const ampersand = section.querySelector(".ampersand");
+    const ampersand = section.querySelector(".and-symbol");
     const wife = section.querySelector(".wife");
     const date = section.querySelector(".date");
 

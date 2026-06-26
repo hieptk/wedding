@@ -383,7 +383,7 @@ header {
   text-transform: uppercase;
 }
 .invite .content .names .name.husband {
-  margin-bottom: 10%;
+  margin-bottom: 0;
 }
 .invite .content .names .ampersand {
   width: 100%;
@@ -942,7 +942,7 @@ header {
 .end .content {
   width: 100%;
   aspect-ratio: 500/268;
-  background: url("../../assets/images/end_bg.webp") no-repeat center/cover;
+  background: url("../../assets/images/fountain.webp") no-repeat center/cover;
   color: white;
   padding: 0 8%;
   text-align: center;
@@ -1000,7 +1000,7 @@ header {
   text-transform: uppercase;
 }
 .letter-section .content .names .name.husband {
-  margin-bottom: 10%;
+  margin-bottom: 0;
 }
 .letter-section .content .names .ampersand {
   display: flex;
