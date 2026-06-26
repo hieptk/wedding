@@ -450,7 +450,7 @@ header {
 }
 .invite .content .location .name {
   font-family: "UVNKeChuyen3", sans-serif;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1.2;
   margin-bottom: 2%;
 }
@@ -523,7 +523,7 @@ header {
     font-size: 3.4vw;
   }
   .invite .content .location .name {
-    font-size: 8.4vw;
+    font-size: 6.4vw;
   }
   .invite .content .location .address {
     font-size: 3.2vw;
