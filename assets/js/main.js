@@ -115,6 +115,7 @@
       gsap.set(".letter-section", { display: "none", opacity: 0 });
       gsap.set(".container", { display: "block", opacity: 1 });
       ScrollTrigger.refresh();
+      setTimeout(initAutoScroll, 1500);
       return;
     }
 
@@ -138,6 +139,7 @@
         // initDresscodeAnimation();
         // initTimeline();
         ScrollTrigger.refresh();
+        setTimeout(initAutoScroll, 2000);
       }
     });
 
@@ -760,6 +762,42 @@
 
       fn(el, options);
     });
+  }
+
+  /* ======================================================
+       AUTOSCROLL
+    ====================================================== */
+
+  function initAutoScroll() {
+    const speed = 0.5;
+    let scrolling = true;
+    let rafId;
+
+    function step() {
+      if (!scrolling) return;
+      window.scrollBy(0, speed);
+      if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        scrolling = false;
+        return;
+      }
+      rafId = requestAnimationFrame(step);
+    }
+
+    function toggle() {
+      if (scrolling) {
+        scrolling = false;
+        cancelAnimationFrame(rafId);
+      } else {
+        scrolling = true;
+        rafId = requestAnimationFrame(step);
+      }
+    }
+
+    rafId = requestAnimationFrame(step);
+
+    window.addEventListener("touchstart", toggle);
+    window.addEventListener("wheel", toggle);
+    window.addEventListener("click", toggle);
   }
 
   /* ======================================================
