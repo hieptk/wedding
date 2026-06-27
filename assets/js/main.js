@@ -783,7 +783,11 @@
       rafId = requestAnimationFrame(step);
     }
 
+    let lastToggle = 0;
     function toggle() {
+      const now = Date.now();
+      if (now - lastToggle < 300) return;
+      lastToggle = now;
       if (scrolling) {
         scrolling = false;
         cancelAnimationFrame(rafId);
