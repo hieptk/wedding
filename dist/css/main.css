@@ -555,7 +555,7 @@ header {
   flex-direction: column;
   align-items: center;
   font-family: "Lora", sans-serif;
-  font-size: 14.6px;
+  font-size: 17px;
 }
 .timeline .content .title {
   font-family: "UVNKeChuyen3", sans-serif;
@@ -600,7 +600,7 @@ header {
 }
 @media (max-width: 500px) {
   .timeline .content {
-    font-size: 2.92vw;
+    font-size: 3.4vw;
   }
   .timeline .content .title {
     font-size: 10.4vw;
